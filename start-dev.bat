@@ -6,7 +6,7 @@ echo ===================================================
 
 set "PROJECT_DIR=%~dp0"
 set "JAVA_HOME=C:\Program Files\Java\jdk-22"
-set "MAVEN_BIN=%PROJECT_DIR%..\tools\maven\bin\mvn.cmd"
+set "MAVEN_BIN=%PROJECT_DIR%tools\maven\bin\mvn.cmd"
 
 echo [1/2] Launching Backend (Spring Boot on port 8080)...
 start "Habit Tracker - Backend (Port 8080)" cmd /k "cd /d %PROJECT_DIR%backend && "%MAVEN_BIN%" spring-boot:run"

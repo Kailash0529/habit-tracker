@@ -1,0 +1,26 @@
+package com.habittracker.habit.dto;
+
+import com.habittracker.habit.FrequencyType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.Instant;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class HabitDto {
+    private Long id;
+    private Long userId;
+    private String name;
+    private String description;
+    private FrequencyType frequencyType;
+    private String daysOfWeek;
+    private String targetTime;
+    private String color;
+    private boolean archived;
+    private Instant createdAt;
+}
